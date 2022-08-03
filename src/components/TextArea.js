@@ -36,7 +36,7 @@ export default function TextArea(props) {
 
     //FN TO COPY TEXT TO CLIPBOARD
     const copy = () => {
-        navigator.clipboard.writeText(text.value)
+        navigator.clipboard.writeText(text)
     }
 
     //FN TO CLEAR TEXT
