@@ -65,7 +65,7 @@ export default function TextArea(props) {
                 <center><button type="button" className="btn btn-success mx-2" onClick={upCase} >UPPERCASE</button>
                 <button type="button" className="btn btn-success mx-2" onClick={lowCase} >LOWERCASE</button>
                 <button type="button" className="btn btn-success mx-2" onClick={wCase} >WEIRDCASE</button>
-                <button type="button" className="btn btn-success mx-2" onClick={copy} >COPY</button>
+                <button type="button" className="btn btn-success mx-2" onClick={copy} >COPY TO CLIPBOARD</button>
                 <button type="button" className="btn btn-success mx-2" onClick={clear} >CLEAR</button></center>
             </div>
             
