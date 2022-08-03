@@ -70,9 +70,9 @@ export default function TextArea(props) {
             <div style={{ padding: 90, backgroundColor:(props.mode==='light')?'#18bc9c':'#1a252f', color:(props.mode==='dark')?'white':'#1a252f' }}>
                 <div className="container text-center">
                     <h3>TEXT SUMMARY</h3><br /><br />
-                        WORDS : {text.split(/\s+/).filter((el) => {return el.length!==0})} <br /><br />
+                        WORDS : {(text.split(/\s+/).filter((el) => {return el.length!==0})).length} <br /><br />
                         CHARACTERS : {text.length} <br /><br />
-                    MINUTES TO READ : {Math.round(((0.008 * text.split(/\s+/).filter((el) => {return el.length!==0})) + Number.EPSILON) * 100) / 100}
+                    MINUTES TO READ : {Math.round(((0.008 * (text.split(/\s+/).filter((el) => {return el.length!==0})).length ) + Number.EPSILON) * 100) / 100}
                 </div>
             </div>
             <div style={{ padding: 40, backgroundColor: (props.mode === 'light') ? '#FFDEAD' : 'black', color: (props.mode === 'dark') ? 'white' : 'black' }}>
