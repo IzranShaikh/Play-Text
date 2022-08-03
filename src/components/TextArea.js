@@ -74,7 +74,7 @@ export default function TextArea(props) {
                     <h3>TEXT SUMMARY</h3><br /><br />
                         WORDS : {wordCount()} <br /><br />
                         CHARACTERS : {text.length} <br /><br />
-                        MINUTES TO READ : {Math.round(((0.008 * wordCount()) + Number.EPSILON) * 100) / 100}
+                    MINUTES TO READ : {Math.round(((0.008 * text.split(" ").filter((el) => {return el.length!==0})) + Number.EPSILON) * 100) / 100}
                 </div>
             </div>
             <div style={{ padding: 40, backgroundColor: (props.mode === 'light') ? '#FFDEAD' : 'black', color: (props.mode === 'dark') ? 'white' : 'black' }}>
