@@ -62,11 +62,11 @@ export default function TextArea(props) {
             <div className="container my-4">
                 <center><h2 style={{ backgroundColor:(props.mode==='light')?'white':'black', color:(props.mode==='dark')?'white':'black' }}>{props.label}</h2></center>
                 <textarea style={{ backgroundColor:(props.mode==='light')?'white':'black', color:(props.mode==='dark')?'white':'black' }} className="form-control" id="textBox" onChange={handleOnChange} rows="12" value={text}></textarea><br/>
-                <button type="button" className="btn btn-primary mx-2" onClick={upCase} >UPPERCASE</button>
+                <center><button type="button" className="btn btn-primary mx-2" onClick={upCase} >UPPERCASE</button>
                 <button type="button" className="btn btn-primary mx-2" onClick={lowCase} >LOWERCASE</button>
                 <button type="button" className="btn btn-primary mx-2" onClick={wCase} >WEIRDCASE</button>
-                <button type="button" className="btn btn-primary mx-2" onClick={copy} >COPY</button>
-                <button type="button" className="btn btn-primary mx-2" onClick={clear} >CLEAR</button>
+                <button type="button" className="btn btn-primary mx-2" onClick={copy} >COPY TO CLIPBOARD</button>
+                <button type="button" className="btn btn-primary mx-2" onClick={clear} >CLEAR</button></center>
             </div>
             
             <div style={{ padding: 90, backgroundColor:(props.mode==='light')?'#18bc9c':'#1a252f', color:(props.mode==='dark')?'white':'#1a252f' }}>
