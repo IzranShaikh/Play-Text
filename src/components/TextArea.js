@@ -76,7 +76,7 @@ export default function TextArea(props) {
                 </div>
             </div>
             <div style={{ padding: 40, backgroundColor: (props.mode === 'light') ? '#FFDEAD' : 'black', color: (props.mode === 'dark') ? 'white' : 'black' }}>
-                <center><h6 >MADE BY © IZRAN SHAIKH</h6></center>
+                <center><h6 >MADE WITH REACT JS</h6></center>
             </div>
         </>
     )
