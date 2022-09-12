@@ -45,21 +45,21 @@ export default function TextArea(props) {
     }
 
     //FN FOR CALC WORDS
-    const wordCount = () => {
-        let a = text.split(/\s+/); //REGEX SPLITTING BY SPACE ASWELL AS LINEBREAKS
-        let c = [];
-        a.forEach((word) => {
-            if (word !== "")
-                c.push(word);
-        })
-        return c.length;
-    }
+    // const wordCount = () => {
+    //     let a = text.split(/\s+/); //REGEX SPLITTING BY SPACE ASWELL AS LINEBREAKS
+    //     let c = [];
+    //     a.forEach((word) => {
+    //         if (word !== "")
+    //             c.push(word);
+    //     })
+    //     return c.length;
+    // }
 
     return (
         <>
             <div className="container my-4">
                 <center><h2 style={{ backgroundColor:(props.mode==='light')?'white':'black', color:(props.mode==='dark')?'white':'black' }}>{props.label}</h2></center>
-                <textarea style={{ backgroundColor:(props.mode==='light')?'white':'black', color:(props.mode==='dark')?'white':'black' }} className="form-control" id="textBox" onChange={handleOnChange} rows="12" value={text}></textarea><br/>
+                <textarea style={{ backgroundColor:(props.mode==='light')?'white':'#1a252f', color:(props.mode==='dark')?'white':'black' }} className="form-control" id="textBox" onChange={handleOnChange} rows="12" value={text}></textarea><br/>
                 <center><button disabled={text.length===0} type="button" className="btn btn-success mx-2" onClick={upCase} >UPPERCASE</button>
                 <button disabled={text.length===0} type="button" className="btn btn-success mx-2" onClick={lowCase} >LOWERCASE</button>
                 <button disabled={text.length===0} type="button" className="btn btn-success mx-2" onClick={wCase} >WEIRDCASE</button>
